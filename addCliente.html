@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Adcionar Item</title>
+    <style type="text/css">
+        .botao{
+        padding: 0.2em 0.6em;
+        position: sticky;
+        top: 90%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+       }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>    
+  </head>
+  <body>
+      <!--inicio nav-->
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <a class="navbar-brand" href="./template.html">INICIO</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <span><a class="nav-item nav-link">Clientes</a></span>
+                <div class="dropdown-content">
+              <p><a href="./addCliente.html"><font color="black">Adcionar Cliente</font></a></p>
+              <p><a href="./viewCliente.html"><font color="black">Visualizar Cliente</font></a></p>
+            </div>
+            </div>
+            <!--  -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <div class="dropdown">
+                  <span><a class="nav-item nav-link">Produtos</a></span>
+                    <div class="dropdown-content">
+                  <p><a href="./addProduto.html"><font color="black">Adicionar Produtos</font></a></p>
+                  <p><a href="./viewProduto.html"><font color="black">Visualizar Produtos</font></a></p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </nav>
+      <!--fim nav-->
+        <!--principal-->
+        <div id="main" class="container-fluid">
+            <h3 class="page-header">Adicionar Cliente</h3>
+            <br>
+            <!--form-->
+            <form action="index.html">
+                <!-- area de campos do form -->
+                <div class="row">
+                    <div class="form-group col-md-1">
+                      <label for="campo1">ID:</label>
+                      <input type="text" class="form-control" id="campo1">
+                    </div>
+                    
+                    <div class="form-group col-md-1">
+                      <label for="campo2">Nome:</label>
+                      <input type="text" class="form-control" id="campo2">
+                    </div>
+                    
+                    <div class="form-group col-md-3">
+                      <label for="campo3">Sobrenome:</label>
+                      <input type="text" class="form-control" id="campo3">
+                    </div>
+                   </div>
+                   <!--segunda linha-->
+                    <div class="row">
+                      <div class="form-group col-md-3">
+                      <label for="campo4">Teste:</label>
+                      <input type="text" class="form-control" id="campo4">
+                      </div>
+
+                        <div class="form-group col-md-3">
+                        <label for="campo5">Teste:</label>
+                        <input type="text" class="form-control" id="campo5">
+                      </div>
+
+                      <div class="form-group col-md-3">
+                        <label for="campo6">Teste:</label>
+                        <input type="text" class="form-control" id="campo6">
+                      </div>
+
+                      <div class="form-group col-md-3">
+                        <label for="campo7">Teste:</label>
+                        <input type="text" class="form-control" id="campo7">
+                      </div>
+                    </div>
+                    <!--terceira linha-->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                        <label for="campo8">Teste:</label>
+                        <input type="text" class="form-control" id="campo8">
+                        </div>
+  
+                          <div class="form-group col-md-6">
+                          <label for="campo9">Teste:</label>
+                          <input type="text" class="form-control" id="campo9">
+                        </div>
+                    <!--quarta linha-->
+                        <div class="form-group col-md-4">
+                          <label for="campo10">Teste:</label>
+                          <input type="text" class="form-control" id="campo10">
+                        </div>
+  
+                        <div class="form-group col-md-4">
+                          <label for="campo11">Teste:</label>
+                          <input type="text" class="form-control" id="campo11">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="campo12">Teste:</label>
+                            <input type="text" class="form-control" id="campo12">
+                          </div>
+                    </div>
+            </form> 
+        </div>
+                    <div id="actions" class="row" style="text-align: center;">
+                    <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <a href="index.html" class="btn btn-default">Cancelar</a>
+                    <br>
+                    <br>
+                    <br>
+                    </div>
+                </div>
+              </form>
+        </div>
+       <!--fim principal-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- FOOTER -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #000000;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>SoMetal
+            </h6>
+            <p>
+             Página de Controle de usuários e protudos da Empresa SoMetal®.
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              Links uteis
+            </h6>
+            <p>
+              <a href="https://faculdadececape.edu.br/" class="text-reset">Site CECAPE</a>
+            </p>
+              <p>
+              <a href="#!" class="text-reset">Google Docs</a>
+            </p>
+            <p>
+              <a class="text-reset">Área do Professor</a>
+              <br>
+              <a href="https://cecap.jacad.com.br/prof/professor.login.logic" class="text-reset"> • Jacad</a>
+              <br>
+              <a href="https://faculdadececape119376.rm.cloudtotvs.com.br/Corpore.Net/Login.aspx" class="text-reset"> • Totvs</a>
+            </p>
+            <!-- <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p> -->
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contatos
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Emerson Silva Biserra</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              emerson.silva.bezerra@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>(88)9 9294-3714</p>
+            <!-- <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p> -->
+            <p>
+              <a href="https://www.linkedin.com/in/emersonsilva142536/" class="text-reset">LinkedIn <img src="https://iconarchive.com/download/i54049/danleech/simple/linkedin.ico" height="15" width="15"></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" class="bg-dark text-white">
+      © 2021 Direitos Autorais:
+      <a class="text-reset fw-bold">Emerson S.</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- FIM FOOTER -->
+  </body>
+</html>
